@@ -31,13 +31,13 @@ def overwrite_git_settings
         if @git_name.nil? || @git_name.empty?
           out << line
         else
-          out << "\tname = " + @git_name + "\n"
+          out << "  name = " + @git_name + "\n"
         end
       elsif line.include? "email = "
         if @git_email.nil? || @git_email.empty?
           out << line
         else
-          out << "\temail = " + @git_email + "\n"
+          out << "  email = " + @git_email + "\n"
         end
       else
         out << line
