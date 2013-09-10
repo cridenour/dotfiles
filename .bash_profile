@@ -4,5 +4,7 @@ export PS1="\[\033[0;37m\] \w \[\033[31m\]\`ruby -e \"print (%x{git branch 2> /d
 # Aliases
 alias reporoot='cd $(git rev-parse --show-toplevel)'
 
+alias today='cal | sed "s/.*/ & /;s/ $(date +%e) / [] /"'
+
 # Git completion
 source ~/bin/git-completion.bash
