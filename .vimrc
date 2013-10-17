@@ -116,6 +116,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Add line numbers for Matthew
+set number
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
